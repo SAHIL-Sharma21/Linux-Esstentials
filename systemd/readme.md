@@ -59,3 +59,14 @@ systemctl kill $unit
 ### Unit status
 ![Unit Status](../assests/systemd_Assests//systemd_unit_status.png "unit status")
 
+-------------------------------
+## Systemd Targets
+- kind of like custom, named runlevels
+
+```bash
+systemctl isolate $target
+# eg: systemctl isolate sysinit.target
+
+# get the default target
+systemctl get-default
+```
