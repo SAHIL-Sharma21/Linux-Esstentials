@@ -29,4 +29,33 @@ WantedBy=multi-user.target
 #reload the systemctl daemon
 systemctl daemon-reload
 ```
+------------------------------
+
+## Systemctl - cmd
+```bash
+#cmds
+systemctl
+
+# list all the service units 
+systemctl list-units --type=service
+
+# all the unit files which are disabled and enabled
+systemctl list-unit-files
+
+# status of the service 
+systemctl status $unit
+
+# to stop the service
+systemctl stop $unit
+
+# to restart the service
+systemctl restart $unit
+# eg: systemctl restart ngnix
+
+# to kill the service
+systemctl kill $unit
+```
+
+### Unit status
+![Unit Status](../assests/systemd_Assests//systemd_unit_status.png "unit status")
 
